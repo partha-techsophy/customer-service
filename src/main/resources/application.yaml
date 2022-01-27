@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: customer-service
+
+server:
+  http2:
+    enabled: true
+
+# Comment is using other DB
+database:
+  memory: true
