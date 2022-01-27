@@ -34,7 +34,7 @@ http://localhost:8080/v1/customers/
 
 ```
 curl --request GET \
-'http://localhost:8080/v1/customers/customer/4531858158347811571'
+'http://localhost:8080/v1/customers/customer/:id'
 ```
 
 ### Fetch all customers
@@ -48,5 +48,5 @@ curl --request GET \
 
 ```
 curl --request DELETE \
-'http://localhost:8080/v1/customers/customer/4531858158347811571'
+'http://localhost:8080/v1/customers/customer/:id'
 ```
