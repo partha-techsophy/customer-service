@@ -15,6 +15,20 @@ concept.
 * repository - External Repositories. Implement repositories as required
 * util - Utility functions
 
+## In  this application
+* _ICustomRestServicePort_ is an input REST adapter
+* _ICustomerService_ is an interface that exposes core service
+* _ICustomRepositoryPort_ is an interface which defines how the service will 
+  interact with a repository
+* _InMemoryCustomerRepositoryPort_ is an implementation of memory repository
+
+The _ICustomerController_ exposes four REST service
+* `/v1/customers` (POST with json body) -> Add a customer
+* `/v1/customers` (GET) -> Fetch all customers
+* `/v1/customers/customer/{id}` (GET) -> Fetch customer by ID
+* `/v1/customers/customer/{id}` (DELETE) -> Delete customer by ID
+
+
 ## Unit testing
 
 To run unit tests set `database.memory` to `true`
