@@ -44,8 +44,6 @@ is the most common MessageSource implementation that resolves messages from
 resource bundles for different locales.
 
 
-
-
 ## Unit testing
 
 To run unit tests set `database.memory` to `true`
